@@ -154,7 +154,7 @@ var levels = [
   {
     selectorName: "Sélecteur de voisins",
     syntax: "A ~ B",
-    doThis : "Selectionner les cornichons autour d'un bento",
+    doThis : "Selectionner les cornichons après un bento",
     selector : "bento ~ cornichon",
     boardMarkup : `
     <cornichon/>
