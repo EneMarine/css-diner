@@ -132,6 +132,64 @@ var levels = [
     </assiette>`
   },
   {
+    doThis : "Select toutes les pommes à côté d'une assiette",
+    selector : "assiette + pomme",
+    syntax : "A + B",
+     helpTitle: "",
+    help : '',
+    examples : [],
+    boardMarkup : `
+    <bento>
+      <pomme class="petite"/>
+    </bento>
+    <assiette />
+    <pomme class="petite"/>
+    <assiette />
+    <pomme/>
+    <pomme class="petite"/>
+    <pomme class="petite"/>
+    `
+  },
+  {
+    selectorName: "Sélecteur frère",
+    syntax: "A ~ B",
+    doThis : "Selectionner les cornichons autour d'un bento",
+    selector : "bento ~ cornichon",
+    boardMarkup : `
+    <cornichon/>
+    <bento>
+      <orange class="petite"/>
+    </bento>
+    <cornichon class="petite"/>
+    <cornichon/>
+    <assiette>
+      <cornichon/>
+    </assiette>
+    <assiette>
+      <cornichon class="petite"/>
+    </assiette>
+    `
+  },
+  {
+    selectorName: "Sélecteur enfant",
+    syntax: "A > B&nbsp;",
+    doThis : "Selectionner la pomme directement sur une assiette",
+    selector : "assiette > pomme",
+    boardMarkup: `
+    <assiette>
+      <bento>
+        <pomme/>
+      </bento>
+    </assiette>
+    <assiette>
+      <pomme/>
+    </assiette>
+    <assiette/>
+    <pomme/>
+    <pomme class="petite"/>
+    `
+  },
+  {
     doThis : "Sélectionner les petites oranges dans les bentos",
     selector : "bento orange.petite",
     syntax: "C'est parti !",
@@ -218,62 +276,5 @@ var levels = [
     <pomme>
       <apple/>
     </assiette>`
-  },
-  {
-    doThis : "Select toutes les pommes à côté d'une assiette",
-    selector : "assiette + pomme",
-     helpTitle: "",
-    help : '',
-    examples : [],
-    boardMarkup : `
-    <bento>
-      <pomme class="petite"/>
-    </bento>
-    <assiette />
-    <pomme class="petite"/>
-    <assiette />
-    <pomme/>
-    <pomme class="petite"/>
-    <pomme class="petite"/>
-    `
-  },
-  {
-    selectorName: "Sélecteur frère",
-    syntax: "A ~ B",
-    doThis : "Selectionner les cornichons autour d'un bento",
-    selector : "bento ~ cornichon",
-    boardMarkup : `
-    <cornichon/>
-    <bento>
-      <orange class="petite"/>
-    </bento>
-    <cornichon class="petite"/>
-    <cornichon/>
-    <assiette>
-      <cornichon/>
-    </assiette>
-    <assiette>
-      <cornichon class="petite"/>
-    </assiette>
-    `
-  },
-  {
-    selectorName: "Sélecteur enfant",
-    syntax: "A > B&nbsp;",
-    doThis : "Selectionner la pomme directement sur une assiette",
-    selector : "assiette > pomme",
-    boardMarkup: `
-    <assiette>
-      <bento>
-        <pomme/>
-      </bento>
-    </assiette>
-    <assiette>
-      <pomme/>
-    </assiette>
-    <assiette/>
-    <pomme/>
-    <pomme class="petite"/>
-    `
   },
 ];
