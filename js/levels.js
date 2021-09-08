@@ -1,7 +1,7 @@
 var levels = [
   {
     helpTitle : "Sélectionner les éléments par leur balise",
-    selectorName : "Sélecteur Balise",
+    selectorName : "Sélecteur de type",
     doThis : "Selectionner les assiettes",
     selector : "assiette",
     syntax : "A",
@@ -70,7 +70,7 @@ var levels = [
   },
   {
     helpTitle: "Sélectionne un élément dans un élément",
-    selectorName : "Sélecteur hierarchique",
+    selectorName : "Sélecteur descendant",
     doThis : "Selectionner la pomme dans l'assiette",
     selector : "assiette pomme",
     syntax: "A&nbsp;&nbsp;B",
@@ -133,6 +133,7 @@ var levels = [
   },
   {
     doThis : "Select toutes les pommes à côté d'une assiette",
+    selectorName: "Sélecteur de voisin direct",
     selector : "assiette + pomme",
     syntax : "A + B",
      helpTitle: "",
@@ -151,7 +152,7 @@ var levels = [
     `
   },
   {
-    selectorName: "Sélecteur frère",
+    selectorName: "Sélecteur de voisins",
     syntax: "A ~ B",
     doThis : "Selectionner les cornichons autour d'un bento",
     selector : "bento ~ cornichon",
@@ -241,7 +242,7 @@ var levels = [
   {
     doThis : "Sélectionner tout",
     selector : "*",
-    selectorName:  "Le sélecteur universel",
+    selectorName:  "Sélecteur universel",
     helpTitle: "Vous pouvez tout sélectionner ! ",
     syntax : "*",
     help : '',
