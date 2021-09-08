@@ -34,7 +34,7 @@ var levels = [
   },
   {
     doThis : "Selectionner la belle assiette",
-    selector : "#assiette",
+    selector : "#belle",
     selectorName: "Sélecteur par ID",
     helpTitle: "Sélectionner les éléments avec un ID",
     syntax: "#id",
@@ -100,7 +100,7 @@ var levels = [
     <bento>
     <orange/>
     </bento>
-    <assiette id="fancy">
+    <assiette id="belle">
       <cornichon/>
     </assiette>
     <assiette>
