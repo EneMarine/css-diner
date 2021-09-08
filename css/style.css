@@ -392,8 +392,6 @@ orange,pomme,cornichon {
   height: 60px;
 }
 
-
-
 carrotte {
   background: orange;
   width: 60px;
@@ -423,7 +421,7 @@ orange,pomme {
 }
 
 orange.petite,
-apple.petite {
+.petite {
   height: 30px;
   width: 30px;
   border-width: 2px 4px 8px 4px;
@@ -464,7 +462,6 @@ orange:before,pomme:before {
 
 bento orange,
 bento pomme,
-
 orange,
 assiette pomme
  {
